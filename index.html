@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador ONE</title>
+    <link rel="shortcut icon" href="imagenes/logo-alura.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="imagenes/logo-alura.svg" alt="" id="logo-alura" />
+
+        <div class="encriptar">
+            <textarea 
+                name="texto"
+                class="texto"
+                id="texto"
+                cols="30"
+                rows="10"
+                placeholder="Ingresa el Mensaje Aquí"
+            ></textarea>
+
+            <div class="terminos"> 
+                <p>Solo Letras Minúsculas y Sin Acentos</p>
+            </div>
+
+            <div class="botones">
+                <button
+                    class="btn-encriptar"
+                    type="button"
+                    onclick="encriptar()"
+                >
+                    Encriptar
+                </button>
+                <input 
+                    type="button"
+                    class="btn-desencriptar"
+                    value="Desencriptar"
+                    onclick="desencriptar()"
+                />
+            </div>
+        </div>
+
+        <div class="encriptado">
+            <img src="imagenes/muneco.svg" alt="" id="muneco" />
+
+            <div class="mensaje-encriptado" id="mensaje-encriptado">
+                <h2 id="titulo-mensaje">Ningún Mensaje Fue Encontrado</h2>
+                <p id="parrafo">Ingresa El Texto que Deseas Encriptar o desencriptar</p>
+                <h4 id="firma">Creado por Maiker Daniel Bravo</h4>
+                <!--
+                <textarea
+                    name="mensaje"
+                    id="mensaje"
+                    cols="30"
+                    rows="10"
+                    class="mensaje"
+                ></textarea>
+                -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
